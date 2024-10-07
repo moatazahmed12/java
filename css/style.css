@@ -1,0 +1,215 @@
+/* يعيد تعيين هوامش العنصر <body> إلى 0 لإزالة الهوامش الافتراضية */
+body {
+    margin: 0; /* إزالة الهوامش الافتراضية */
+    padding: 0; /* إزالة الحشوات الافتراضية */
+    background-color: #f5f3f3; /* لون الخلفية */
+    max-width: 98%;
+
+}
+
+/* يحدد خصائص النمط لكلاس .date-time */
+.date-time {
+    font-size: 24px; /* حجم الخط */
+    font-weight: bold; /* الخط العريض */
+    text-align: center; /* محاذاة النص إلى الوسط */
+    margin-top: 50px; /* هامش فوق */
+    margin-bottom: 10px; /* هامش تحت */
+}
+
+/* تنسيق الفقرات داخل .date-time */
+.date-time p {
+    border: #92833f 2px solid; /* حدود بلون معين */
+    border-radius: 100px; /* شكل الحدود الدائري */
+    margin: 0; /* إزالة الهوامش الافتراضية */
+    margin-top: 60px; /* هامش فوق */
+    padding: 10px 0; /* حشوة داخلية */
+    color: #450dad; /* لون النص */
+    text-align: center; /* محاذاة النص إلى الوسط */
+}
+
+/* يحدد خصائص النمط لكلاس .btn1 */
+.btn1 {
+    background-color: #3f9241; /* لون الخلفية */
+    color: rgb(245, 243, 243); /* لون النص */
+    padding: 10px 20px; /* حشوة داخلية */
+    border: none; /* إزالة الحدود */
+    cursor: pointer; /* تغيير شكل الماوس عند المرور فوق الزر */
+    border-radius: 4px; /* شكل الحدود */
+    font-size: 16px; /* حجم الخط */
+}
+
+/* تنسيق الحاوية .contianer */
+.contianer {
+    width: 99%; /* عرض الحاوية */
+}
+
+/* تنسيق النموذج داخل الحاوية .form1 */
+.form1 {
+    width: 99%; /* عرض الحاوية */
+    align-items: center; /* محاذاة العناصر في المركز */
+}
+
+/* تنسيق النموذج في .form-plus */
+.form-plus {
+    display: flex; /* استخدام نظام الفليكس */
+    align-items: center; /* محاذاة العناصر في المركز */
+    justify-content: center; /* محاذاة العناصر في الوسط */
+    justify-content: space-between; /* توزيع العناصر */
+    width: 100%; /* عرض الحاوية */
+}
+
+/* تنسيق النموذج داخل .form-plus */
+.form-plus form {
+    margin-left: 24%; /* هامش على اليسار */
+    margin-top: 20px; /* هامش فوق */
+    margin-bottom: 20px; /* هامش تحت */
+    width: 50%; /* عرض النموذج */
+    height: 350px; /* ارتفاع النموذج */
+    display: flex; /* استخدام نظام الفليكس */
+    flex-direction: column; /* ترتيب العناصر فوق بعضها */
+    align-items: center; /* محاذاة العناصر في المركز */
+    border-radius: 2%; /* شكل الحدود */
+    background-color: #fff; /* لون الخلفية */
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.2); /* ظل */
+}
+
+/* تنسيق حقول الإدخال في النموذج */
+.form-plus form input {
+    width: 95%; /* عرض حقول الإدخال */
+    padding: 10px; /* حشوة داخلية */
+    border: #3f9241 solid transparent; /* حدود بلون معين */
+    border-radius: 4px; /* شكل الحدود */
+    margin-bottom: 15px; /* هامش تحت */
+}
+
+/* تنسيق الكلاس .ahmed */
+.ahmed {
+    margin-bottom: 15px; /* هامش تحت */
+}
+
+/* تنسيق العنوان داخل النموذج */
+.form-plus form h2 {
+    text-align: center; /* محاذاة النص إلى الوسط */
+    color: #3f9241; /* لون النص */
+    margin-top: 10px; /* هامش فوق */
+    margin-bottom: 30px; /* هامش تحت */
+}
+
+/* تنسيق الصور */
+.img2 img {
+    width: 100px; /* عرض الصورة */
+    height: auto; /* الحفاظ على نسبة الأبعاد */
+}
+
+/* تنسيق الأزرار داخل الكلاس .moataz */
+.moataz button {
+    margin-top: 150px; /* هامش فوق */
+    height: 50px; /* ارتفاع الزر */
+    width: 50px; /* عرض الزر */
+    background-color: #450dad; /* لون الخلفية */
+    border-radius: 4px; /* شكل الحدود */
+    font-size: 16px; /* حجم الخط */
+}
+
+/* ///////////////////////// */
+
+/* إعدادات النافذة المنبثقة (Modal) */
+.modal {
+    display: none; /* مخفية بشكل افتراضي */
+    position: fixed; /* تثبيت النافذة في مكانها */
+    z-index: 1; /* وضعها فوق العناصر الأخرى */
+    padding-top: 100px; /* مكان النافذة */
+    left: 0; /* محاذاة اليسار */
+    top: 0; /* محاذاة الأعلى */
+    width: 100%; /* عرض كامل */
+    height: 100%; /* ارتفاع كامل */
+    overflow: auto; /* تمكين التمرير إذا لزم الأمر */
+    background-color: rgb(0,0,0); /* لون الخلفية الافتراضي */
+    background-color: rgba(0,0,0,0.4); /* لون الخلفية مع الشفافية */
+}
+
+/* محتوى النافذة المنبثقة */
+.modal-content {
+    background-color: #fefefe; /* لون الخلفية للمحتوى */
+    margin: auto; /* توسيط المحتوى */
+    padding: 20px; /* حشوة داخلية */
+    border: 1px solid #888; /* حدود للمحتوى */
+    width: 80%; /* عرض المحتوى */
+}
+
+/* زر الإغلاق في النافذة المنبثقة */
+.close {
+    color: #aaaaaa; /* لون الزر */
+    float: right; /* محاذاة الزر إلى اليمين */
+    font-size: 28px; /* حجم الخط */
+    font-weight: bold; /* الخط العريض */
+}
+
+/* تغيير لون زر الإغلاق عند المرور فوقه */
+.close:hover,
+.close:focus {
+    color: #000; /* لون الزر عند المرور */
+    text-decoration: none; /* إزالة التزيين */
+    cursor: pointer; /* تغيير شكل الماوس */
+}
+
+/* إعدادات إضافية للنموذج داخل النافذة المنبثقة */
+.modal1 form {
+    width: 100%; /* عرض كامل للنموذج */
+    display: flex; /* استخدام نظام الفليكس */
+    flex-direction: column; /* ترتيب العناصر عموديًا */
+    align-items: center; /* محاذاة العناصر في المركز */
+}
+
+/* تنسيق القسم الذي يحتوي على الأزرار في النافذة المنبثقة */
+.modal1 .slide2 {
+    width: 100%; /* عرض كامل */
+    display: flex; /* استخدام نظام الفليكس */
+    justify-content: center; /* محاذاة العناصر في الوسط */
+    flex-direction: column; /* ترتيب العناصر عموديًا */
+    align-items: center; /* محاذاة العناصر في المركز */
+    margin-bottom: 20px; /* هامش تحت */
+}
+
+/* تنسيق العنوان داخل النافذة المنبثقة */
+.modal1 h2 {
+    text-align: center; /* محاذاة النص إلى الوسط */
+    margin-bottom: 20px; /* هامش تحت */
+    margin-top: 20px; /* هامش فوق */
+}
+
+/* تنسيق الأزرار داخل النافذة المنبثقة */
+.modal1 button {
+    margin-top: 20px; /* هامش فوق */
+    margin-bottom: 20px; /* هامش تحت */
+    width: 100%; /* عرض كامل */
+    background-color: #4CAF50; /* لون الخلفية */
+    color: white; /* لون النص */
+    padding: 14px 20px; /* حشوة داخلية */
+    border: 3px solid #4CAF50; /* حدود */
+    cursor: pointer; /* تغيير شكل الماوس */
+    opacity: 0.8; /* إضافة شفافية بسيطة */
+    border-radius: 4px; /* شكل الحدود */
+    display: block; /* عرض الزر ككتلة */
+    margin: 0 auto; /* توسيط الزر */
+}
+
+/* تأثير عند المرور فوق الأزرار */
+.modal1 .slide2 button:hover {
+    opacity: 1; /* زيادة الشفافية */
+    background-color: #247ac0; /* تغيير لون الخلفية عند المرور */
+}
+
+/* تنسيق الأزرار داخل القسم .slide2 */
+.modal1 .slide2 button {
+    width: 50%; /* عرض 50% */
+    background-color: #dacb47; /* لون الخلفية */
+    color: white; /* لون النص */
+    padding: 14px 20px; /* حشوة داخلية */
+    border: 4px solid #b1a53d; /* حدود */
+    cursor: pointer; /* تغيير شكل الماوس */
+    opacity: 0.8; /* إضافة شفافية بسيطة */
+    border-radius: 4px; /* شكل الحدود */
+    display: block; /* عرض الزر ككتلة */
+    margin: 0 auto; 
+    }
